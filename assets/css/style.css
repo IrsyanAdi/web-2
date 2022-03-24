@@ -1,12 +1,12 @@
 body
 {
-    font-family: "Monstserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #topbar{
     background-color: #3a3a3a;
     color: #7d7d7d;
-    height: 50px; /*penyebab kenapa topbarnya tida responsif warnanya*/
+    height: 50px; /*penyebab kenapa topbarnya tidak responsif warnanya*/
     line-height: 50px;
 }
 

@@ -1,26 +1,83 @@
-body
-{
+body {
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-#topbar{
+.topbar{
     background-color: #3a3a3a;
-    color: #7d7d7d;
-    height: 50px; /*penyebab kenapa topbarnya tidak responsif warnanya*/
-    line-height: 50px;
+    height: 130px;
+    padding-left: 15px;
 }
-
-.moto, .alamat, .sosmed{
-    list-style: none;
+.alamat {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-top: 5px;
 }
-
-#topbar li{
-    display: inline-block;
-}
-
-#topbar li a{
-    color: #7d7d7d;
+.alamat div a{
     text-decoration: none;
-    display: inline-block;
-    padding: 0 15px;
+    color: #7d7d7d;
+}
+
+/* .layanan.nol {
+    background-color: rgb(70, 0, 55);
+}
+
+.layanan.satu {
+    background-color: rgb(5, 5, 122);
+}
+
+.layanan.dua {
+    background-color: rgb(43, 87, 43);
+}
+
+.layanan.tiga {
+    background-color: rgb(119, 1, 1);
+}
+
+.layanan.empat {
+    background-color: rgb(49, 49, 47);
+} */
+
+/* responsive */
+@media (min-width: 800px){
+    .alamat{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .topbar {
+        height: 35px;
+    }
+
+    .layanan.nol {
+        width: 310px;
+    }
+
+    .layanan.satu {
+        width: 370px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .layanan.dua {
+        width: 200px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .layanan.tiga {
+        width: 220px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .layanan.empat {
+        width: 100px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .layanan.empat a i {
+        padding-right: 5px;
+    }
 }

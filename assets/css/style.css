@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 .topbar{
@@ -17,6 +16,8 @@ body {
 .alamat div a{
     text-decoration: none;
     color: #7d7d7d;
+    font-family: 'Roboto';
+    font-size: small;
 }
 
 /* .layanan.nol {

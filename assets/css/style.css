@@ -1,44 +1,206 @@
-body {
+* {
   margin: 0;
   padding: 0;
 }
 
+/* ini kode awal style topbar */
 .topbar {
   background-color: #3a3a3a;
-  height: 130px;
+  height: 180px;
   padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  z-index: 3;
 }
 .alamat {
   max-width: 1200px;
   margin: 0px auto;
   padding-top: 5px;
+  height: 200px;
 }
 .alamat div a {
   text-decoration: none;
   color: #7d7d7d;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: small;
 }
 
-/* .layanan.nol {
-    background-color: rgb(70, 0, 55);
+.layanan.nol {
+  /* background-color: rgb(70, 0, 55); */
+  height: 35px;
+  line-height: 34px;
+  border-bottom: solid 1px #7d7d7d;
 }
 
 .layanan.satu {
-    background-color: rgb(5, 5, 122);
+  /* background-color: rgb(5, 5, 122); */
+  height: 35px;
+  line-height: 34px;
+  border-bottom: solid 1px #7d7d7d;
 }
 
 .layanan.dua {
-    background-color: rgb(43, 87, 43);
+  /* background-color: rgb(43, 87, 43); */
+  height: 35px;
+  line-height: 34px;
+  border-bottom: solid 1px #7d7d7d;
 }
 
 .layanan.tiga {
-    background-color: rgb(119, 1, 1);
+  /* background-color: rgb(119, 1, 1); */
+  height: 35px;
+  line-height: 34px;
+  border-bottom: solid 1px #7d7d7d;
 }
 
 .layanan.empat {
-    background-color: rgb(49, 49, 47);
-} */
+  /* background-color: rgb(49, 49, 47); */
+  height: 35px;
+  line-height: 34px;
+}
+/* ini kode akhir style topbar */
+
+/* ini kode awal style navigasibar */
+.navbar {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  position: relative;
+  background-color: white;
+  z-index: 1;
+}
+
+.navbar .logo {
+  background-color: rgb(255, 255, 255);
+  /* text-align: center; */
+  height: 65px;
+  line-height: 65px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar .logo .logo1 img {
+  height: 55px;
+  padding-top: 5px;
+}
+
+.navbar .logo .logo2 {
+  position: relative;
+}
+
+.navbar .logo .logo2 input {
+  position: absolute;
+  width: 800px;
+  right: 50px;
+}
+
+.navbar .logo .logo2 img {
+  height: 35px;
+  padding-top: 15px;
+}
+
+.navlist {
+  background-color: #a2c046;
+  margin: auto 20px;
+  transform: translateY(-100%);
+  position: relative;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.navbar .navlist li {
+  position: relative;
+}
+
+.navlist li input.btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 58px;
+  opacity: 0;
+}
+
+.navlist li input.btn-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 58px;
+  opacity: 0;
+}
+
+.navlist li input.btn-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 58px;
+  opacity: 0;
+}
+
+.navlist li input.btn-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 58px;
+  opacity: 0;
+}
+
+.navlist li input.btn-4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 58px;
+  opacity: 0;
+}
+
+.navlist li {
+  padding: 20px;
+  border-bottom: solid 0.5px #d0e690;
+  list-style: none;
+  /* background-color: brown; */
+}
+
+.navlist li i {
+  font-size: 20px;
+  float: right;
+  color: white;
+}
+
+.navlist li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navlist li ul {
+  margin-top: 25px;
+  display: none;
+}
+
+[id^="btn"]:checked + ul {
+  display: block;
+}
+
+.navlist li ul li {
+  background-color: #3a3a3a;
+  height: 1px;
+  line-height: 1px;
+}
+
+.navlist li ul li a {
+  color: #7d7d7d;
+  font-size: small;
+}
+
+.navlist.slide {
+  transform: translateY(0);
+}
+
+/* ini kode akhir style navigasibar */
 
 /* responsive */
 @media (min-width: 768px) {
@@ -48,37 +210,89 @@ body {
   }
 
   .topbar {
-    height: 35px;
+    height: 140px;
+    z-index: -99;
+    position: relative;
   }
 
   .layanan.nol {
     width: 310px;
+    border-bottom: none;
   }
 
   .layanan.satu {
     width: 370px;
     display: flex;
     justify-content: flex-end;
+    border-bottom: none;
   }
 
   .layanan.dua {
     width: 200px;
     display: flex;
     justify-content: flex-end;
+    border-bottom: none;
   }
 
   .layanan.tiga {
     width: 220px;
     display: flex;
     justify-content: flex-end;
+    border-bottom: none;
   }
 
   .layanan.empat {
     width: 100px;
     display: flex;
     justify-content: flex-end;
+    border-bottom: none;
   }
   .layanan.empat a i {
     padding-right: 5px;
+  }
+
+  .navbar-flex {
+    display: flex;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    /* background-color: aquamarine; */
+  }
+
+  .navbar .logo .logo2 img {
+    display: none;
+  }
+
+  .navlist {
+    display: flex;
+    width: 900px;
+    justify-content: flex-end;
+  }
+
+  .navbar .logo .logo1 img {
+    background-color: rgb(255, 255, 255);
+    height: 68px;
+    width: 250px;
+  }
+
+  .navlist li {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .navlist li i {
+    line-height: 40px;
+  }
+
+  .navlist li a {
+    padding-right: 8px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navlist {
   }
 }

@@ -14,8 +14,8 @@
     />
     <!--custom style css-->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <!--bootstrap css-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- bootstrap css
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" /> -->
     <!--fontawsome-->
     <link rel="stylesheet" href="assets/css/fontawesome-free-6.1.1-web/css/all.css" />
   </head>
@@ -40,7 +40,68 @@
       </div>
     </div>
 
+    <div class="navbar-flex">
+      <nav class="navbar">
+        <div class="logo">
+          <div class="logo1"><img src="assets/img/logo.png" /></div>
+          <div class="logo2">
+            <img class="input" src="assets/img/togglenavbar.png" />
+          </div>
+        </div>
+        <ul class="navlist">
+          <li class="home"><a href="#">Home</a></li>
+          <li>
+            <a href="#">About Us</a>
+            <i class="fa-solid fa-caret-down"></i>
+            <input type="checkbox" id="btn" class="btn" />
+            <ul>
+              <li><a href="#">Sejarah perusahaan</a></li>
+              <li><a href="#">Profil</a></li>
+              <li><a href="#">Visi</a></li>
+              <li><a href="#">Misi</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Operasional</a><i class="fa-solid fa-caret-down"></i>
+            <input type="checkbox" id="btn-1" class="btn-1" />
+            <ul>
+              <li><a href="#">Perencanaan</a></li>
+              <li><a href="#">Produksi</a></li>
+              <li><a href="#">Penjualan</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Fasilitas</a><i class="fa-solid fa-caret-down"></i>
+            <input type="checkbox" id="btn-2" class="btn-2" />
+            <ul>
+              <li><a href="#">HGU</a></li>
+              <li><a href="#">HGB</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Sertifikasi</a><i class="fa-solid fa-caret-down"></i>
+            <input type="checkbox" id="btn-3" class="btn-3" />
+            <ul>
+              <li><a href="#">PHPL-VLK</a></li>
+              <li><a href="#">RIL-C</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Partnership</a><i class="fa-solid fa-caret-down"></i>
+            <input type="checkbox" id="btn-4" class="btn-4" />
+            <ul>
+              <li><a href="#">Arsari Group</a></li>
+              <li><a href="#">ABK</a></li>
+              <li><a href="#">Instansi Pemerintah</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Galeri</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <!--bootstraps js-->
+    <script src="assets/js/script.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

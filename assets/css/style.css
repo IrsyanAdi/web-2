@@ -210,8 +210,8 @@
   }
 
   .topbar {
-    height: 140px;
-    z-index: -99;
+    height: 100px;
+    z-index: -9;
     position: relative;
   }
 
@@ -251,48 +251,116 @@
     padding-right: 5px;
   }
 
-  .navbar-flex {
-    display: flex;
-  }
-
   .navbar {
     display: flex;
-    justify-content: center;
-    z-index: 1;
-    /* background-color: aquamarine; */
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    max-width: 1250px;
+    margin: -0 auto;
+    top: -50px;
   }
 
-  .navbar .logo .logo2 img {
+  .logo {
+    display: flex;
+  }
+
+  .logo .logo1 {
+    display: flex;
+  }
+
+  .logo2 {
     display: none;
   }
 
-  .navlist {
-    display: flex;
-    width: 900px;
-    justify-content: flex-end;
+  .navbar .logo .logo1 img {
+    height: 90px;
   }
 
-  .navbar .logo .logo1 img {
-    background-color: rgb(255, 255, 255);
-    height: 68px;
-    width: 250px;
+  .navlist {
+    margin: auto 0px;
+    display: flex;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    height: 90px;
+    min-width: 30px;
+    top: 90px;
+    position: relative;
   }
 
   .navlist li {
-    height: 40px;
-    line-height: 40px;
+    border-right: solid 5px #d0e690;
+    list-style: none;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    min-width: 0px;
+    width: 80px;
+    position: relative;
+    /* background-color: brown; */
+  }
+
+  .navlist li input.btn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 80px;
+    height: 78px;
+    opacity: 0;
+  }
+  .navlist li input.btn-1 {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 80px;
+    height: 78px;
+    opacity: 0;
+  }
+  .navlist li input.btn-2 {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 80px;
+    height: 78px;
+    opacity: 0;
+  }
+  .navlist li input.btn-3 {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 80px;
+    height: 78px;
+    opacity: 0;
+  }
+  .navlist li input.btn-4 {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 80px;
+    height: 78px;
+    opacity: 0;
+  }
+  .navlist li ul {
+    margin-top: 0px;
+    position: absolute;
+    display: none;
+  }
+
+  .navlist li ul li a {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .navlist li i {
-    line-height: 40px;
-  }
-
-  .navlist li a {
-    padding-right: 8px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .navlist {
+    font-size: 20px;
+    display: flex;
+    position: absolute;
+    color: white;
+    align-items: center;
+    right: 50%;
+    bottom: 15%;
   }
 }
